@@ -1,14 +1,7 @@
 
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
-// const finalScore = Array.from(document.querySelectorAll('#finalScore'));
-// const mostRecentScore = Array.from(document.querySelectorAll('#mostRecentScore'));
 
-// finalScore.innerText = mostRecentScore
-
-// const score = {
-//   score:mostRecentScore
-// }
 
 let currentQuestion = {};
 let acceptingAnswers = true;

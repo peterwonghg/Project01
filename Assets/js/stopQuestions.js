@@ -1,14 +1,7 @@
 
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
-// const finalScore = Array.from(document.querySelectorAll('#finalScore'));
-// const mostRecentScore = Array.from(document.querySelectorAll('#mostRecentScore'));
 
-// finalScore.innerText = mostRecentScore
-
-// const score = {
-//   score:mostRecentScore
-// }
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -59,16 +52,14 @@ function startQuiz() {
   
   function getNewQuestion() {
 
-
-
+// TODO Get rid of the quiz format and replace with sequential question asking
+// TODO Future development put a tick box for discussed with Supervisor in the have i completed the job before to enable next question to progress even if it the answer is no 
     if(availableQuestions.length === 0 & score === 50) {
       sessionStorage.setItem('mostRecentScore', score)
-        // TODO correct link
+
       return window.location.assign('./hazard.html')
     } 
-  //   if(acceptingAnswers === false){
-  //     return window.location.assign('./contactSuper.html')        
-  // }
+
 
     if(availableQuestions.length === 0 & score < 50){
       return window.location.assign('./contactSuper.html')      
@@ -76,9 +67,6 @@ function startQuiz() {
 
     
 
-  //   if(currentQuestion.answer === 1){
-  //     return window.location.assign('./contactSuper.html')        
-  // }
    
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]

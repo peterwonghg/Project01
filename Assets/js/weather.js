@@ -21,69 +21,29 @@ function displayWeather(cityName) {
         .then(function (currentData) {
             console.log(currentData)
 
+            displayCity();
 
-            // const cityLocationValue = (currentData.name);
-            // const temperatureValue = (currentData.main.temp);
+            // Present today's date, weather icon condition, temperature, wind speed and humidity
+            presentDayWeather.innerHTML = `<ul>
+<li class="title">${currentData.name} </li>
+<li><img src ="http://openweathermap.org/img/wn/${currentData.weather[0].icon
+                }@2x.png" /></li>
+<li>Temp/°C: ${(currentData.main.temp)}</li>
+<li>Wind/mps: ${currentData.wind.speed}</li>
+<li>Humidity/%: ${currentData.main.humidity}</li>
+</ul>
+`;         
+
+// Add other desired weather information
+
             const windSpeedValue = (currentData.wind.speed);
-            // const humidityValue = (currentData.main.humidity);
-            // const windSpeed = (windSpeedValue);
-            // localStorage.setItem('city-Location', cityLocationValue);
-            // localStorage.setItem('temperature', temperatureValue);
+
             localStorage.setItem('wind-Speed', windSpeedValue);
-            // localStorage.setItem('humidity', humidityValue);
 
-            // const form1 = document.getElementById('form1');
-            // const windSpeed = document.getElementById('windSpeed');
-
-            // form1.addEventListener('submit',function(e){
-            //     e.preventDefault();
-
-            // const windSpeed = localStorage.getItem("wind-Speed");
-            
-            // document.getElementById('wind-Speed').value = window.localStorage["wind-Speed"];
-
+// fix getItem bug into review page
                 
             })
         };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // const feelsLikeValue = (currentData.main.feels_like);
-
-            // localStorage.setItem('feels-like', feelsLikeValue);
-
-            // const feelsLike = localStorage.getItem("feels-Like");
-            
-            // document.getElementById('feels-Like').value = window.localStorage["feels-Like"];
-
-            // let oneCallUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${currentData.coord.lat}&lon=${currentData.coord.lon}&appid=${apiKey}&units=${units}&lang=${lang}`;
-            // fetch(oneCallUrl)
-            //     .then(function (response) {
-            //         console.log(response)
-            //         // return response.json();
-            //         const weather = response.json();
-            //         console.log(weather.data);
-
-            //     })
-            //     .then(function (fiveDayData) {
-            //         if (searchHistory.includes(currentData.name) === false) {
-            //             searchHistory.push(currentData.name);
-            //             localStorage.setItem("city", JSON.stringify(searchHistory));
-            //     }
-            //     displayCity();
-            // });
 
 
 function displayCity() {

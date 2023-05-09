@@ -4,6 +4,8 @@ Deployed URL: https://peterwonghg.github.io/Project01/
 
 GitHub URL: https://github.com/peterwonghg/Project01.git
 
+Presentation: https://docs.google.com/presentation/d/1UuJxM-5idujYe47ZJ6cbk93pCPn5JATZC4MY9E-5DG8/edit#slide=id.g29f43f0a72_0_5
+
 ## Task
 ```
 Take5 is a process where everyone conduct health and safety checks to mittigate hazards exposure at a task level
