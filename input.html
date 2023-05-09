@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Requesting Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Requesting Font Awesome for Free Icons -->
+    <script src="https://kit.fontawesome.com/862039dabd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Details Input Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>Take5 <Br>Mate <i class="fa-regular fa-thumbs-up"></i></header>
+            <span class="title">Personnel and Job Details</span>
+        <form id="form">
+            <div class="fields">
+                <div class="input-fields">
+                            <!-- Personnel Name Field -->
+                    <label>Full Name:</label>
+                    <br>
+                    <input id="namePersonnel" type="text" placeholder="Enter your name" required>
+                </div>
+            </div>
+
+            <div class="fields">
+                        <!-- Site Field -->
+                <div class="input-fields">
+                    <br>
+                    <label for="site">Choose a Site:</label>
+                    <br>
+                    <!-- <input name="Site" list="site">
+                        <datalist id="site">
+                            <option value="Armadale"></option>
+                            <option value="Hazelmere"></option>
+                            <option value="Neerabup"></option>
+                            <option value="South Guildford"></option>
+                        </datalist> -->
+                    <input id="site" placeholder="Enter Work Area" required>
+                </div>
+            </div>
+
+
+                    <!-- Task Field -->
+            <div class="fields">
+                <div class="input-fields">
+                    <br>
+                    <label for="task">Task:</label>
+                    <br>
+                    <textarea name="task" id="task" cols="33" rows="5" placeholder="Enter your task here ..." required></textarea>
+                </div>
+            </div>
+
+            <div class="titleBtn">
+                <button type="submit">Next <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+                    <br>
+                    
+                    <!-- TODO outside personnel details?? next button override required fields condition -->
+                    <!-- Next> Button -->
+        </form>
+
+        <script src="./Assets/js/getInputData.js"></script>  
+       
+</div>    
+</body>
+
+</html>
