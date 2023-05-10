@@ -36,9 +36,17 @@ function displayWeather(cityName) {
 
 // Add other desired weather information
 
+            const siteLocationValue = (currentData.name);
+            const weatherConditionValue = (currentData.weather[0].description);
+            const temperatureValue = (currentData.main.temp);
             const windSpeedValue = (currentData.wind.speed);
+            const humidityValue = (currentData.main.humidity);
 
+            localStorage.setItem('site-Location', siteLocationValue);
+            localStorage.setItem('weather-Condition', weatherConditionValue);
+            localStorage.setItem('temperature', temperatureValue);
             localStorage.setItem('wind-Speed', windSpeedValue);
+            localStorage.setItem('humidity', humidityValue);
 
 // fix getItem bug into review page
                 

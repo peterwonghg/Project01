@@ -6,7 +6,7 @@ document.getElementById('name-Personnel').value = window.localStorage["name-Pers
 document.getElementById('site-name').value = window.localStorage["site-name"];
 document.getElementById('task-description').value = window.localStorage["task-description"];
 
-localStorage.clear();
+
 
 
 

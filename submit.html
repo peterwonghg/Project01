@@ -19,9 +19,9 @@
         <header>Take5 <Br>Mate <i class="fa-regular fa-thumbs-up"></i></header>
 
         <form action="https://formsubmit.co/0378dea8e9819e1dc5b75ff92accdbd7" method="post">
-            <!-- TODO define form first css -->
+
             <div class="form first"></div>
-                <!-- TODO define/delete form details personnel -->
+
                 <div class="details personnel">
                  <span class="title">Personnel and Job Details</span>
                    
@@ -37,10 +37,10 @@
 
 
                     <div class="fields">
-                        <!-- Site Field -->
+                        <!-- Location Field -->
                         <br>
                         <div class="input-fields">
-                            <label for="site">Choose a Site:</label>
+                            <label for="site">Location:</label>
                             <br>
 
                             <input type="text" id="site-name" name="site-name" value="name">
@@ -48,16 +48,67 @@
                         </div>
                     </div>
 
+
+
+
                     <div class="fields">
-                        <!-- Personnel Name Field --> 
                         <div class="input-fields">
                             <br>
-                              <!-- Need to getValue of windSpeed -->
+                            <label>Site Location:</label>
+                            <br>
+                            <input id="site-Location" name="site-Location" type="text" value="name">
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="input-fields">
+                            <br>
+                            <label>weather-Condition:</label>
+                            <br>
+                            <input id="weather-Condition" name="weather-Condition" type="text" value="name">
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="input-fields">
+                            <br>
+                            <label>Temperature °C:</label>
+                            <br>
+                            <input id="temperature" name="temperature" type="text" value="name">
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="input-fields">
+                            <br>
                             <label>Wind Speed m/s:</label>
                             <br>
                             <input id="wind-Speed" name="wind-Speed" type="text" value="name">
                         </div>
                     </div>
+                    <div class="fields">
+                        <div class="input-fields">
+                            <br>
+                            <label>Humidity /%:</label>
+                            <br>
+                            <input id="humidity" name="humidity" type="text" value="name">
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 <div class="fields">
 
@@ -196,7 +247,8 @@
             </div>
         </form>
     </div>   
-    <script src="./Assets/js/populateInputData.js"></script>  
+    <script src="./Assets/js/populateInputData.js"></script>
+    <script src="./Assets/js/popWeatherData.js"></script>  
 </body>
 
 </html>
